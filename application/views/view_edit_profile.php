@@ -61,6 +61,8 @@ $(document).ready(function(){
 						<input type="password" style="<?=(form_error('password') ? 'border-color: red;' : '') ?>" name="password" value="<?=set_value('password');?>" class="form-control" placeholder="Password"/>
 					</div>
                     
+                    <a href="<?=base_url();?>" class="btn btn-sign">&nbsp; &nbsp; &nbsp; Go Back &nbsp; &nbsp; &nbsp;</a>
+
 
 					<button type="submit" class="btn btn-sign">&nbsp; &nbsp; &nbsp; Update Profile &nbsp; &nbsp; &nbsp;</button>
 

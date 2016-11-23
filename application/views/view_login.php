@@ -27,16 +27,11 @@
 						<div id="loginslider" class="carousel slide profile-slider" data-ride="carousel">
 						  <!-- Wrapper for slides -->
 						  <div class="carousel-inner" role="listbox">
-						  	<?php 
-						  	
-						  	$i=0; foreach($users as $row) { 
-						  		$name =$row->FirstName;
-						  		$name = !empty($row->LastName) ? $name .' '.$row->LastName: $name;
-						  		?>
+						  	<?php $i=0; foreach($users as $row) { ?>
 						    <div class="item <?=($i<=0)?'active':'';?>">
 						      <img src="<?=base_url('Template/img/dp/'.$row->Image);?>"alt="slider"/>
 						      <div class="carousel-caption">
-						      	<a href="#"><?=$name;?></a>
+						      	<a href="#"><?=$row->FirstName.' '.$LastName;?></a>
 						      	<a href="#" id="LikePro" onclick="$('pid').val('<?=$row->ID;?>');likee('<?=$row->ID;?>');">
                                 <input type="hidden" id="pid" name="pid" />
                                 <input type="hidden" id="inc" value="<?=$row->Likes+1;?>" name="inc" />

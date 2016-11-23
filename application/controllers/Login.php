@@ -65,10 +65,9 @@ class Login extends CI_Controller {
  
 	   
 	   $this->load->library('encrypt');
-       $id = base64_decode(urldecode($code))-124143;
       
        $query=$this->db->get_where('users',array(
-              'ID'=>$id,
+              'Secret'=>$code,
               'Email'=>$email
               ));
               

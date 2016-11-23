@@ -14,7 +14,6 @@ class Profile extends CI_Controller {
         {
             redirect(base_url('login'));
         }
-        $error ='';
 	    $dataa=$this->db->get_where('users',array('ID'=>$this->session->userdata('ID')))->row();
         
             if($_POST)
@@ -38,8 +37,7 @@ class Profile extends CI_Controller {
                          'Gender'=>$this->input->post('gender'),
                          'Age'=>$this->input->post('age'),
                          'Email'=>$this->input->post('email'),
-                         'Password'=>md5($this->input->post('password')),
-                         'Image'=>$this->input->post('gender').'.jpg'
+                         'Password'=>md5($this->input->post('password'))
                          );
                     }
                     else
@@ -49,8 +47,7 @@ class Profile extends CI_Controller {
                          'LastName'=>$this->input->post('last'),
                          'Gender'=>$this->input->post('gender'),
                          'Age'=>$this->input->post('age'),
-                         'Email'=>$this->input->post('email'),
-                         'Image'=>$this->input->post('gender').'.jpg'
+                         'Email'=>$this->input->post('email')
                          );
                     }
                     
