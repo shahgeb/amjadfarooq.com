@@ -1,0 +1,128 @@
+
+/* Medium Desktop 768px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+.loginpage {
+  margin-right: 380px;
+}
+
+
+.sidebar-right {
+  width: 380px;
+}
+
+.profile-slider .carousel-caption > a {
+  font-size: 24px;
+}
+
+
+}
+
+
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.loginpage {
+  margin-right: 300px;
+}
+
+
+.sidebar-right {
+  width: 300px;
+}
+
+.profile-slider .carousel-caption > a {
+  font-size: 24px;
+}
+
+
+}
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+
+.profile-slider {
+  margin: 0 55px;
+}
+
+.profile-slider .carousel-control.right {
+  right: -40px;
+}
+
+.profile-slider .carousel-control.left {
+  left: -40px;
+}
+
+.loginpage {
+  margin-right: 0;
+  overflow: hidden;
+}
+
+.sidebar-right {
+  background: #fff none repeat scroll 0 0;
+  bottom: inherit;
+  display: block;
+  margin: 0 auto;
+  overflow-y: hidden;
+  position: inherit;
+  right: inherit;
+  text-align: center;
+  top: inherit;
+  width: 100%;
+}
+
+
+
+.innerpage {
+bottom: inherit;
+height: 100%;
+left: inherit;
+margin-left: 0;
+overflow: hidden;
+position: relative;
+right: inherit;
+}
+
+.btn.btn-img.menu-toggle {
+  display: none;
+}
+
+.warrap .btn-menu {
+  position: absolute;
+  right: 5px;
+  top: 13px;
+}
+
+.sidebar-left {
+  background: #fff none repeat scroll 0 0;
+  bottom: inherit;
+  margin-left: 0;
+  position: relative;
+  top: inherit;
+  width: 100%;
+}
+
+
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.profile-slider .carousel-control.right {
+  right: -60px;
+}
+
+.profile-slider .carousel-control.left {
+  left: -60px;
+}
+
+
+}
